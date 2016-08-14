@@ -31,6 +31,15 @@ set history=1000
 set t_Co=256
 " Set the colorscheme
 colorscheme molokai
+" Change the encoding so font show correctly
+set encoding=utf-8
+" If we're using gVim
+if has("gui_running")
+	" Set the font to Consolas, Size 10, Bold
+	set guifont=Consolas:h10:b:cANSI
+	" Maximize the window
+	au GUIEnter * simalt ~x
+endif
 " Automatically open NERDTree with specific settings
 let g:nerdtree_tabs_open_on_console_startup=1
 let g:NERDTreeDirArrows=0
