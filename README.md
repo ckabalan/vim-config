@@ -1,6 +1,6 @@
 # SpectralCoding's Vim Configuration
 
-### Installation
+## Installation
 
 ```bash
 git clone --recurse-submodules https://github.com/SpectralCoding/vim-config.git ~/.vim
@@ -8,7 +8,7 @@ git clone --recurse-submodules https://github.com/SpectralCoding/vim-config.git 
 
 The command above clones the repository into ~/.vim and updates all the plugins.
 
-### Major Enhancements
+## Major Enhancements
 
  * Mouse Support
  * Tab indents make sense
@@ -17,7 +17,7 @@ The command above clones the repository into ~/.vim and updates all the plugins.
  * Startup screen makes sense and has vim logo
  * Syntax highlighting enabled
 
-### Plugin List (Pathogen)
+## Plugin List (Pathogen)
 
  * [ack.vim](http://vimawesome.com/plugin/ack-vim) - Vim plugin for the Perl module / CLI script 'ack'
  * [dockerfile.vim](http://vimawesome.com/plugin/dockerfile-vim) - Vim syntax file & snippets for Docker's Dockerfile
@@ -33,6 +33,6 @@ The command above clones the repository into ~/.vim and updates all the plugins.
  * [vim-puppet](http://vimawesome.com/plugin/vim-puppet-enchanted) - Puppet niceties for your Vim setup
  * [vim-startify](http://vimawesome.com/plugin/vim-startify) - The fancy start screen for Vim.
 
-### License
+## License
 
 SpectralCoding's Vim Configuration is released under the [MIT License](https://opensource.org/licenses/MIT)
