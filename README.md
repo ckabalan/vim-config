@@ -41,6 +41,19 @@ The command above clones the repository into ~/.config/nvim, updates all the plu
  * [vim-puppet](http://vimawesome.com/plugin/vim-puppet-enchanted) - Puppet niceties for your Vim setup
  * [vim-startify](http://vimawesome.com/plugin/vim-startify) - The fancy start screen for Vim.
 
+## Building Vim
+
+The following commands won't always be necessary but they can be used to build the latest version of Vim from source.
+
+```bash
+yum install -y lua lua-devel luajit luajit-devel ctags python python-devel perl perl-devel ncurses-devel
+git clone https://github.com/vim/vim.git
+cd vim/src
+./configure --with-features=huge --enable-pythoninterp --enable-python3interp --enable-perlinterp -enable-luainterp --with-luajit --enable-fail-if-missing
+make
+make install
+```
+
 ## License
 
 SpectralCoding's Vim Configuration is released under the [MIT License](https://opensource.org/licenses/MIT)
