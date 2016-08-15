@@ -17,6 +17,9 @@ set autoindent
 set smartindent
 set shiftwidth=4
 set scrolloff=10
+" Enable line numbers and relative numbers.
+set number
+set relativenumber
 " Enable Mouse support
 set mouse=a
 " Make Backspace work like most other applications
