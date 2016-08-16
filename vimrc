@@ -47,10 +47,10 @@
 	" Set <Leader> to ,
 	let mapleader=","
 	" Shortcut - Change Tabs
-	map <C-t><up> :tabr<cr>
-	map <C-t><down> :tabl<cr>
-	map <C-t><left> :tabp<cr>
-	map <C-t><right> :tabn<cr>
+	map <C-t>k :tabr<cr>
+	map <C-t>j :tabl<cr>
+	map <C-t>h :tabp<cr>
+	map <C-t>l :tabn<cr>
 	" Shortcut - Undo
 	map <C-z> :undo
 	" Move vertically by visual line
