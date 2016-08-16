@@ -62,8 +62,8 @@
 	set foldlevelstart=10
 	set foldnestmax=10
 	set foldmethod=indent
-	# Comment this out if you're security concious
-	# This setting forces modeline on for root
+	" Comment this out if you're security concious
+	" This setting forces modeline on for root
 	set modeline
 " }}}
 " Line Numbers {{{
