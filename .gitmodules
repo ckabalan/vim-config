@@ -37,3 +37,9 @@
 [submodule "bundle/dockerfile.vim"]
 	path = bundle/dockerfile.vim
 	url = https://github.com/ekalinin/dockerfile.vim
+[submodule "bundle/gundo.vim"]
+	path = bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/easymotion/vim-easymotion.git
