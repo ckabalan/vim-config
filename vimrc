@@ -5,12 +5,26 @@
 	" Load Plugins
 	execute pathogen#infect()
 	execute pathogen#helptags()
-	" Enable Mouse support
-	set mouse=a
 	" Make Backspace work like most other applications
 	set backspace=2
 	" Set the vim command history length
 	set history=1000
+" }}}
+" Hard Mode {{{
+	" Disable Arrowkeys
+	noremap <Up> <NOP>
+	noremap <Down> <NOP>
+	noremap <Left> <NOP>
+	noremap <Right> <NOP>
+	" Disable hjkl
+	" noremap h <NOP>
+	" noremap j <NOP>
+	" noremap k <NOP>
+	" noremap l <NOP>
+	" Enable Mouse support
+	" set mouse=a
+	" Disable Mouse support
+	set mouse=
 " }}}
 " Visual Settings {{{
 	" Enable Syntax Highlight
