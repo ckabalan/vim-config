@@ -29,6 +29,7 @@ The command above clones the repository into ~/.config/nvim, updates all the plu
 
  * [ack.vim](http://vimawesome.com/plugin/ack-vim) - Vim plugin for the Perl module / CLI script 'ack'
  * [dockerfile.vim](http://vimawesome.com/plugin/dockerfile-vim) - Vim syntax file & snippets for Docker's Dockerfile
+ * [easymotion](http://vimawesome.com/plugin/easymotion) - Vim motions on speed!
  * [gruvbox](http://vimawesome.com/plugin/gruvbox) - Retro groove color scheme for Vim
  * [molokai](http://vimawesome.com/plugin/molokai) - Molokai color scheme for Vim
  * [The NERD tree](http://vimawesome.com/plugin/nerdtree-red) - A tree explorer plugin for vim.
