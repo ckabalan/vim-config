@@ -51,8 +51,8 @@ The command above clones the repository into ~/.config/nvim, updates all the plu
 
 ### Git
 
- * `:Git <COMMAND>` - Any git command (Example - :Git commit -am "Initial Commit!")
- * `:G<VERB>` - Any git command (Example - :Gcommit -am "Initial Commit!")
+ * `:Git <COMMAND>` - Any git command (Example - `:Git commit -am "Initial Commit!"`)
+ * `:G<VERB>` - Any git command (Example - `:Gcommit -am "Initial Commit!"`)
 
 ## Plugin List (Pathogen)
 
