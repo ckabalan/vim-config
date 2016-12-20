@@ -9,6 +9,8 @@
 	set backspace=2
 	" Set the vim command history length
 	set history=1000
+	" Allows buffers to be hidden instead of closed if there are changes unwritten to disk
+	set hidden
 " }}}
 " Hard Mode {{{
 	" Disable Arrowkeys
@@ -46,11 +48,17 @@
 " General Shortcuts {{{
 	" Set <Leader> to ,
 	let mapleader=","
+	" Select Tabs or Buffers below
 	" Shortcut - Change Tabs
-	map <C-t>k :tabr<cr>
-	map <C-t>j :tabl<cr>
-	map <C-t>h :tabp<cr>
-	map <C-t>l :tabn<cr>
+	" map <C-t>k :tabr<cr>
+	" map <C-t>j :tabl<cr>
+	" map <C-t>h :tabp<cr>
+	" map <C-t>l :tabn<cr>
+	" Shortuct - Change Buffers
+	map <C-t>k :bnext<cr>
+	map <C-t>j :bprevious<cr>
+	map <C-t>h :bnext<cr>
+	map <C-t>l :bprevious<cr>
 	" Shortcut - Undo
 	map <C-z> :undo
 	" Move vertically by visual line
