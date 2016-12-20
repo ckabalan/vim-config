@@ -79,6 +79,7 @@ The command above clones the repository into ~/.config/nvim, updates all the plu
  * [The NERD tree](http://vimawesome.com/plugin/nerdtree-red) - A tree explorer plugin for vim.
  * [vim-airline](http://vimawesome.com/plugin/vim-airline) - lean & mean status/tabline for vim that's light as air
  * [vim-airline-themes](http://vimawesome.com/plugin/vim-airline-themes) - A collection of themes for vim-airline
+ * [vim-bufkill](http://vimawesome.com/plugin/bufkill-vim) - Close buffers without closing splits, windows, or tabs
  * [vim-fugitive](http://vimawesome.com/plugin/fugitive-vim) - fugitive.vim: a Git wrapper so awesome, it should be illegal
  * [vim-json](http://vimawesome.com/plugin/vim-json-speak-now) - Syntax highlighting for JSON in Vim
  * [vim-markdown](http://vimawesome.com/plugin/vim-markdown-enchanted) - Vim Markdown runtime files
