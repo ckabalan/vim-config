@@ -2,12 +2,21 @@
 
 ## Installation - Vim
 
+The commands below clone the repository into ~/.vim and update all the plugins.
+
+#### Linux
+```bash
+git clone --recursive https://github.com/SpectralCoding/vim-config.git ~/.vim
 ```
-Linux: git clone --recursive https://github.com/SpectralCoding/vim-config.git ~/.vim && git -C ~/.vim submodule update --recursive --remote
-Windows: git clone --recursive https://github.com/SpectralCoding/vim-config.git %USERPROFILE%/vimfiles && git -C %USERPROFILE%/vimfiles submodule update --recursive --remote
+#### Windows
+```batch
+git clone --recursive https://github.com/SpectralCoding/vim-config.git %USERPROFILE%/vimfiles
 ```
 
-The command above clones the repository into ~/.vim and updates all the plugins.
+#### Update Vim Modules
+```bash
+git submodule update --recursive --remote
+```
 
 ## Installation - NeoVim
 
