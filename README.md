@@ -25,6 +25,23 @@ The command above clones the repository into ~/.config/nvim, updates all the plu
  * Startup screen makes sense and has vim logo
  * Syntax highlighting enabled
 
+## Cheat Sheet
+
+### EasyMotion
+
+ * `,<hjkl>` - Highlight Next Directional **Motion**
+ * `,/` - Highlight Next **Search**
+ 
+### Code Folding
+
+ * `za` - Toggle Fold
+ * `zc` - **C**lose Fold
+ * `zo` - **O**pen Fold
+ * `zr` - **R**educe Folding By 1 Level (Entire Buffer)
+ * `zR` - **R**emove all folds
+ * `zm` - **M**ore Folding By 1 Level (Entire Buffer)
+ * `zM` - **M**aximum Folding
+
 ## Plugin List (Pathogen)
 
  * [ack.vim](http://vimawesome.com/plugin/ack-vim) - Vim plugin for the Perl module / CLI script 'ack'
