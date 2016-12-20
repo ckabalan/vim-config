@@ -48,6 +48,11 @@ The command above clones the repository into ~/.config/nvim, updates all the plu
  * `<C-t>j` - Previous Buffer
  * `<C-t>k` - Next Buffer
  * `<C-t>l` - Next Buffer
+ * `:BUN` - **B**uffer **UN**load
+ * `:BD` - **B**uffer **D**elete (Confirms if unwritten changes, `:BD!` or `:BW` to skip)
+ * `:BW` - **B**uffer **W**ipeout (Discard without prompt)
+ * `:ls` - **L**i**S**t buffers.
+ * `:b<#>` - Switch to **B**uffer **#**.
 
 ### Git
 
