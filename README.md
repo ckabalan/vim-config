@@ -42,6 +42,18 @@ The command above clones the repository into ~/.config/nvim, updates all the plu
  * `zm` - **M**ore Folding By 1 Level (Entire Buffer)
  * `zM` - **M**aximum Folding
 
+### Buffers (no Tabs!)
+
+ * `<C-t>h` - Previous Buffer
+ * `<C-t>j` - Previous Buffer
+ * `<C-t>k` - Next Buffer
+ * `<C-t>l` - Next Buffer
+
+### Git
+
+ * `:Git <COMMAND>` - Any git command (Example - :Git commit -am "Initial Commit!")
+ * `:G<VERB>` - Any git command (Example - :Gcommit -am "Initial Commit!")
+
 ## Plugin List (Pathogen)
 
  * [ack.vim](http://vimawesome.com/plugin/ack-vim) - Vim plugin for the Perl module / CLI script 'ack'
