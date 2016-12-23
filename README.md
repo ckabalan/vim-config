@@ -92,7 +92,7 @@ The command above clones the repository into ~/.config/nvim, updates all the plu
 The following commands won't always be necessary but they can be used to build the latest version of Vim from source.
 
 ```bash
-yum install -y lua lua-devel luajit luajit-devel ctags python python-devel perl perl-devel ncurses-devel
+yum install -y lua lua-devel luajit luajit-devel ctags python python-devel perl perl-devel perl-ExtUtils-Embed ncurses-devel
 git clone https://github.com/vim/vim.git
 cd vim/src
 ./configure --with-features=huge --enable-pythoninterp --enable-python3interp --enable-perlinterp -enable-luainterp --with-luajit --enable-fail-if-missing
