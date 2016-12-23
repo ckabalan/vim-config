@@ -23,7 +23,7 @@ git submodule update --recursive --remote
 ```bash
 mkdir -p ~/.config/nvim && git clone --recursive https://github.com/SpectralCoding/vim-config.git ~/.config/nvim && ln -s ~/.config/nvim/vimrc ~/.config/nvim/init.vim
 ```
-The command above clones the repository into ~/.config/nvim, updates all the plugins, and creates a symlink from vimrc to init.vim.
+The command above clones the repository into ~/.config/nvim and creates a symlink from vimrc to init.vim.
 
 #### Update Vim Modules
 ```bash
