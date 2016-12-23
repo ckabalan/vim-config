@@ -21,10 +21,14 @@ git submodule update --recursive --remote
 ## Installation - NeoVim
 
 ```bash
-mkdir -p ~/.config/nvim && git clone --recursive https://github.com/SpectralCoding/vim-config.git ~/.config/nvim && git -C ~/.config/nvim submodule update --recursive --remote && ln -s ~/.config/nvim/vimrc ~/.config/nvim/init.vim
+mkdir -p ~/.config/nvim && git clone --recursive https://github.com/SpectralCoding/vim-config.git ~/.config/nvim && ln -s ~/.config/nvim/vimrc ~/.config/nvim/init.vim
 ```
-
 The command above clones the repository into ~/.config/nvim, updates all the plugins, and creates a symlink from vimrc to init.vim.
+
+#### Update Vim Modules
+```bash
+git submodule update --recursive --remote
+```
 
 ## Major Enhancements
 
