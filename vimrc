@@ -39,8 +39,8 @@
 	set encoding=utf-8
 	" If we're using gVim
 	if has("gui_running")
-		" Set the font to Consolas, Size 10, Bold
-		set guifont=Consolas:h10:b:cANSI
+		" Set the font to Consolas, Size 14, Bold
+		set guifont=Consolas:h14:b:cANSI
 		" Maximize the window
 		au GUIEnter * simalt ~x
 	endif
