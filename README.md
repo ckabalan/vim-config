@@ -99,10 +99,12 @@ The following commands won't always be necessary but they can be used to build t
 yum install -y lua lua-devel luajit luajit-devel ctags python python-devel perl perl-devel perl-ExtUtils-Embed ncurses-devel
 git clone https://github.com/vim/vim.git
 cd vim/src
-./configure --with-features=huge --enable-pythoninterp --enable-python3interp --enable-perlinterp -enable-luainterp --with-luajit --enable-fail-if-missing
+./configure --with-features=huge --enable-pythoninterp --enable-perlinterp -enable-luainterp --with-luajit --enable-fail-if-missing
 make
 make install
 ```
+
+**Note**: For Python3 support change `--enable-pythoninterp` to `--enable-python3interp`.
 
 ## License
 
