@@ -127,6 +127,40 @@
 	let g:airline#extensions#tabline#enabled = 1
 	let g:airline_theme='molokai'
 " }}}
+" Syntastic {{{
+"        set statusline+=%#warningmsg#
+"        set statusline+=%{SyntasticStatuslineFlag()}
+"        set statusline+=%*
+"
+"        let g:syntastic_always_populate_loc_list = 1
+"        let g:syntastic_auto_loc_list = 1
+"        let g:syntastic_check_on_open = 1
+"        let g:syntastic_check_on_wq = 0
+" }}}
+" Python Stuff {{{
+"        "let g:ycm_server_python_interpreter = '/usr/bin/python3'
+"        " Highlight Bad Whitespace
+"        au BufRead,BufNewFile *.py,*.pyw,*.c,*.h highlight BadWhitespace ctermbg=red guibg=darkred
+"        au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+"        " PEP8-compatible Indentation
+"        au BufNewFile,BufRead *.py
+"                \ set tabstop=4 |
+"                \ set softtabstop=4 |
+"                \ set shiftwidth=4 |
+"                \ set textwidth=79 |
+"                \ set expandtab |
+"                \ set autoindent |
+"                \ set fileformat=unix
+"        " Python with VIRTUAL_ENV support
+"        python3 << EOF
+"import os
+"import sys
+"if 'VIRTUAL_ENV' in os.environ:
+"    project_base_dir = os.environ['VIRTUAL_ENV']
+"    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+"    execfile(activate_this, dict(__file__=activate_this))
+"EOF
+" }}}
 " Startify {{{
 	highlight StartifyHeader ctermfg=10
 	let g:startify_list_order = [
