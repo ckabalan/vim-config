@@ -91,6 +91,16 @@ git submodule update --recursive --remote
  * [vim-puppet](http://vimawesome.com/plugin/vim-puppet-enchanted) - Puppet niceties for your Vim setup
  * [vim-startify](http://vimawesome.com/plugin/vim-startify) - The fancy start screen for Vim.
 
+## Non-Default Addons
+
+These are other addons I find useful but don't need to be installed everywhere:
+
+* https://github.com/christoomey/vim-tmux-navigator
+* https://github.com/vim-syntastic/syntastic
+* https://github.com/Valloric/YouCompleteMe
+* https://github.com/nvie/vim-flake8
+* https://github.com/jmcantrell/vim-virtualenv
+
 ## Building Vim
 
 The following commands won't always be necessary but they can be used to build the latest version of Vim from source.
