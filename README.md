@@ -104,7 +104,7 @@ make
 make install
 ```
 
-**Note**: For Python3 support change `--enable-pythoninterp` to `--enable-python3interp`.
+**Note**: For Python3 support change `--enable-pythoninterp` to `--enable-python3interp`. If it can't find python3 even though it exists append `vi_cv_path_python3=/path/to/python3.X` to the end of the `./configure` line.
 
 ## License
 
