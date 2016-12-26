@@ -55,10 +55,15 @@
 	" map <C-t>h :tabp<cr>
 	" map <C-t>l :tabn<cr>
 	" Shortuct - Change Buffers
-	map <C-t>k :bnext<cr>
-	map <C-t>j :bprevious<cr>
-	map <C-t>h :bnext<cr>
-	map <C-t>l :bprevious<cr>
+	" map <C-t>k :bnext<cr>
+	" map <C-t>j :bprevious<cr>
+	" map <C-t>h :bnext<cr>
+	" map <C-t>l :bprevious<cr>
+	" Shortuct - Split Navigations
+	nnoremap <C-J> <C-W><C-J>
+	nnoremap <C-K> <C-W><C-K>
+	nnoremap <C-L> <C-W><C-L>
+	nnoremap <C-H> <C-W><C-H>
 	" Shortcut - Undo
 	map <C-z> :undo
 	" Move vertically by visual line
@@ -132,6 +137,7 @@
 "        set statusline+=%{SyntasticStatuslineFlag()}
 "        set statusline+=%*
 "
+"        "let g:syntastic_python_python_exec = 'python3'
 "        let g:syntastic_always_populate_loc_list = 1
 "        let g:syntastic_auto_loc_list = 1
 "        let g:syntastic_check_on_open = 1
@@ -151,15 +157,7 @@
 "                \ set expandtab |
 "                \ set autoindent |
 "                \ set fileformat=unix
-"        " Python with VIRTUAL_ENV support
-"        python3 << EOF
-"import os
-"import sys
-"if 'VIRTUAL_ENV' in os.environ:
-"    project_base_dir = os.environ['VIRTUAL_ENV']
-"    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-"    execfile(activate_this, dict(__file__=activate_this))
-"EOF
+"        filetype plugin indent on
 " }}}
 " Startify {{{
 	highlight StartifyHeader ctermfg=10
