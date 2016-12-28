@@ -55,10 +55,10 @@
 	" map <C-t>h :tabp<cr>
 	" map <C-t>l :tabn<cr>
 	" Shortuct - Change Buffers
-	" map <C-t>k :bnext<cr>
-	" map <C-t>j :bprevious<cr>
-	" map <C-t>h :bnext<cr>
-	" map <C-t>l :bprevious<cr>
+	map <C-t>k :bnext<cr>
+	map <C-t>j :bprevious<cr>
+	map <C-t>h :bnext<cr>
+	map <C-t>l :bprevious<cr>
 	" Shortuct - Split Navigations
 	nnoremap <C-J> <C-W><C-J>
 	nnoremap <C-K> <C-W><C-K>
