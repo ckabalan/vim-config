@@ -85,6 +85,8 @@
 	autocmd FileType * setlocal fo-=r fo-=o
 	" Misc filetype customizations
 	autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+	" Stop concealing JSON quotes
+	let g:vim_json_syntax_conceal = 0
 " }}}
 " Folding {{{
 	set foldenable
