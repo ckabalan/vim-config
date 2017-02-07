@@ -87,6 +87,8 @@
 	autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 	" Stop concealing JSON quotes
 	let g:vim_json_syntax_conceal = 0
+	" Close YouCompleteMe preview window when you exit insert mode
+	let g:ycm_autoclose_preview_window_after_insertion = 1
 " }}}
 " Folding {{{
 	set foldenable
