@@ -85,6 +85,7 @@
 	autocmd FileType * setlocal fo-=r fo-=o
 	" Misc filetype customizations
 	autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+	autocmd FileType go setlocal foldmethod=syntax
 	" Stop concealing JSON quotes
 	let g:vim_json_syntax_conceal = 0
 	" Close YouCompleteMe preview window when you exit insert mode
