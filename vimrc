@@ -151,7 +151,9 @@
 "        let g:syntastic_check_on_wq = 0
 " }}}
 " Python Stuff {{{
-"        "let g:ycm_server_python_interpreter = '/usr/bin/python3'
+"        " Use the most relevant python3 interpreter (even works with virtualenv)
+"        let g:ycm_server_python_interpreter = 'python3'
+"        let g:ycm_python_binary_path = 'python3'
 "        " Highlight Bad Whitespace
 "        au BufRead,BufNewFile *.py,*.pyw,*.c,*.h highlight BadWhitespace ctermbg=red guibg=darkred
 "        au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
