@@ -1,4 +1,4 @@
-# SpectralCoding's Vim Configuration
+# CKabalan's Vim Configuration
 
 ## Installation - Vim
 
@@ -6,11 +6,11 @@ The commands below clone the repository into ~/.vim and update all the plugins.
 
 #### Linux
 ```bash
-git clone --recursive https://github.com/SpectralCoding/vim-config.git ~/.vim
+git clone --recursive https://github.com/ckabalan/vim-config.git ~/.vim
 ```
 #### Windows
 ```batch
-git clone --recursive https://github.com/SpectralCoding/vim-config.git %USERPROFILE%/vimfiles
+git clone --recursive https://github.com/ckabalan/vim-config.git %USERPROFILE%/vimfiles
 ```
 
 #### Update Vim Modules
@@ -21,7 +21,7 @@ git submodule update --recursive --remote
 ## Installation - NeoVim
 
 ```bash
-mkdir -p ~/.config/nvim && git clone --recursive https://github.com/SpectralCoding/vim-config.git ~/.config/nvim && ln -s ~/.config/nvim/vimrc ~/.config/nvim/init.vim
+mkdir -p ~/.config/nvim && git clone --recursive https://github.com/ckabalan/vim-config.git ~/.config/nvim && ln -s ~/.config/nvim/vimrc ~/.config/nvim/init.vim
 ```
 The command above clones the repository into ~/.config/nvim and creates a symlink from vimrc to init.vim.
 
@@ -133,6 +133,7 @@ alias ll="ls -alh"
 The following commands won't always be necessary but they can be used to build the latest version of Vim from source.
 
 ```bash
+yum groupinstall "Development tools"
 yum install -y lua lua-devel luajit luajit-devel ctags python python-devel perl perl-devel perl-ExtUtils-Embed ncurses-devel
 git clone https://github.com/vim/vim.git
 cd vim/src
@@ -145,4 +146,4 @@ make install
 
 ## License
 
-SpectralCoding's Vim Configuration is released under the [MIT License](https://opensource.org/licenses/MIT)
+CKabalan's Vim Configuration is released under the [MIT License](https://opensource.org/licenses/MIT)
