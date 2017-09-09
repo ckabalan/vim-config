@@ -126,6 +126,11 @@
 	let g:nerdtree_tabs_open_on_console_startup=1
 	let g:NERDTreeDirArrows=0
 	let g:NERDTreeShowHidden=1
+	" If you open Neovim without a file (such as a shortcut) it
+	" lags NERDTree listing all the files, so set it to your home.
+	if getcwd() == "C:\\Windows\\system32"
+		cd $HOMEPATH
+	endif
 	autocmd VimEnter *
 		\	if !argc()
 		\ |		Startify
