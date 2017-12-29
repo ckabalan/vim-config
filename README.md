@@ -30,6 +30,20 @@ The command above clones the repository into ~/.config/nvim and creates a symlin
 git submodule update --recursive --remote
 ```
 
+#### Make NeoVim default
+
+~/.bashrc
+
+```bash
+# Set Editors to NeoVim
+export EDITOR='TERM=xterm-256color nvim'
+export GIT_EDITOR='TERM=xterm-256color nvim'
+export VISUAL='TERM=xterm-256color nvim'
+# Force tmux to assume the terminal supports 256 colours.
+alias tmux="tmux -2"
+alias nvim="TERM=xterm-256color nvim"
+```
+
 ## Major Enhancements
 
  * Mouse Support
@@ -118,16 +132,6 @@ is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
 #set-option -g default-terminal "screen-256color"
 ```
 
-~/.bashrc
-
-```bash
-# User specific aliases and functions
-alias tmux="tmux -2"
-alias nvim="TERM=xterm-256color nvim"
-alias ll="ls -alh"
-```
-
-
 ## Building Vim
 
 The following commands won't always be necessary but they can be used to build the latest version of Vim from source.
@@ -143,6 +147,17 @@ make install
 ```
 
 **Note**: For Python3 support change `--enable-pythoninterp` to `--enable-python3interp`. If it can't find python3 even though it exists append `vi_cv_path_python3=/path/to/python3.X` to the end of the `./configure` line.
+
+## Building NeoVim ([source](https://github.com/neovim/neovim/wiki/Building-Neovim))
+
+```bash
+yum groupinstall "Development tools"
+yum -y install libtool autoconf automake cmake gcc gcc-c++ make pkgconfig unzip
+git clone https://github.com/neovim/neovim.git
+cd neovim
+make CMAKE_BUILD_TYPE=Release
+make install
+```
 
 ## License
 
