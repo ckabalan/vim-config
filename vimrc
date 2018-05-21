@@ -97,6 +97,10 @@
 	autocmd FileType * setlocal fo-=r fo-=o
 	" Misc filetype customizations
 	autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+	autocmd FileType yml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+	" Ruby files have some weird syntax highlighting slowness
+	autocmd FileType rb setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab re=1 norelativenumber nocursorline
+	au! BufRead,BufNewFile *.template setlocal filetype=json tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 	autocmd FileType go setlocal foldmethod=syntax
 	" Stop concealing JSON quotes
 	let g:vim_json_syntax_conceal = 0
@@ -113,6 +117,7 @@
 	set modeline
 " }}}
 " Line Numbers {{{
+	set cursorline
 	set number
 	set relativenumber
 " }}}
@@ -155,6 +160,8 @@
 	" Enable Airline's Tab Bar
 	let g:airline#extensions#tabline#enabled = 1
 	let g:airline_theme='molokai'
+	" Enable Airline Fonts
+	let g:airline_powerline_fonts = 1
 " }}}
 " Syntastic {{{
 "        set statusline+=%#warningmsg#
