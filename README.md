@@ -138,7 +138,7 @@ is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
 
 ## Puppet File Format Fixes
 
-After install add the following lines to `./bundle/vim-puppet/ftplugin/puppet.vim`:
+After install remove the following lines from `./bundle/vim-puppet/ftplugin/puppet.vim`:
 
 ```vim
 setl ts=2
