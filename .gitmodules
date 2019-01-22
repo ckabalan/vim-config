@@ -1,14 +1,34 @@
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+	branch = master
+[submodule "bundle/ansible-vim"]
+	path = bundle/ansible-vim
+	url = https://github.com/pearofducks/ansible-vim
+	branch = master
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+	branch = master
+[submodule "bundle/dockerfile.vim"]
+	path = bundle/dockerfile.vim
+	url = https://github.com/ekalinin/dockerfile.vim
+	branch = master
 [submodule "bundle/gruvbox"]
 	path = bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox
 	branch = master
+[submodule "bundle/gundo.vim"]
+	path = bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim
+	branch = master
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim
+	branch = master
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = https://github.com/tomasr/molokai
-	branch = master
-[submodule "bundle/cd"]
-	path = bundle/cd
-	url = https://github.com/scrooloose/nerdtree.git
 	branch = master
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
@@ -18,9 +38,29 @@
 	path = bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
 	branch = master
+[submodule "bundle/vim-bufkill"]
+	path = bundle/vim-bufkill
+	url = https://github.com/qpkorr/vim-bufkill
+	branch = master
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/easymotion/vim-easymotion.git
+	branch = master
+[submodule "bundle/vim-flake8"]
+	path = bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8
+	branch = master
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+	branch = master
+[submodule "bundle/vim-jenkinsfile"]
+	path = bundle/vim-jenkinsfule
+	url = https://github.com/thanethomson/vim-jenkinsfile
+	branch = master
+[submodule "bundle/vim-jinja2-syntax"]
+	path = bundle/vim-jinja2-syntax
+	url = https://github.com/Glench/vim-jinja2-syntax
 	branch = master
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
@@ -34,6 +74,10 @@
 	path = bundle/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
 	branch = master
+[submodule "bundle/vim-ps1"]
+	path = bundle/vim-ps1
+	url = https://github.com/pprovost/vim-ps1
+	branch = master
 [submodule "bundle/vim-puppet"]
 	path = bundle/vim-puppet
 	url = https://github.com/rodjek/vim-puppet
@@ -42,23 +86,11 @@
 	path = bundle/vim-startify
 	url = https://github.com/mhinz/vim-startify
 	branch = master
-[submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
-	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/vim-tmux-navigator"]
+	path = bundle/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
 	branch = master
-[submodule "bundle/dockerfile.vim"]
-	path = bundle/dockerfile.vim
-	url = https://github.com/ekalinin/dockerfile.vim
-	branch = master
-[submodule "bundle/gundo.vim"]
-	path = bundle/gundo.vim
-	url = https://github.com/sjl/gundo.vim.git
-	branch = master
-[submodule "bundle/vim-easymotion"]
-	path = bundle/vim-easymotion
-	url = https://github.com/easymotion/vim-easymotion.git
-	branch = master
-[submodule "bundle/vim-bufkill"]
-	path = bundle/vim-bufkill
-	url = https://github.com/qpkorr/vim-bufkill
+[submodule "bundle/vim-virtualenv"]
+	path = bundle/vim-virtualenv
+	url = https://github.com/plytophogy/vim-virtualenv
 	branch = master

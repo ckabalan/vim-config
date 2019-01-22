@@ -90,30 +90,34 @@ alias nvim="TERM=xterm-256color nvim"
 ## Plugin List (Pathogen)
 
  * [ack.vim](http://vimawesome.com/plugin/ack-vim) - Vim plugin for the Perl module / CLI script 'ack'
+ * [ansible-vim](https://vimawesome.com/plugin/ansible-vim) - A vim syntax plugin for Ansible 2.x
  * [dockerfile.vim](http://vimawesome.com/plugin/dockerfile-vim) - Vim syntax file & snippets for Docker's Dockerfile
- * [easymotion](http://vimawesome.com/plugin/easymotion) - Vim motions on speed!
  * [gruvbox](http://vimawesome.com/plugin/gruvbox) - Retro groove color scheme for Vim
+ * [gundo.vim](https://github.com/sjl/gundo.vim) - Gundo.vim is Vim plugin to visualize your Vim undo tree.
  * [molokai](http://vimawesome.com/plugin/molokai) - Molokai color scheme for Vim
- * [The NERD tree](http://vimawesome.com/plugin/nerdtree-red) - A tree explorer plugin for vim.
+ * [nerdtree](http://vimawesome.com/plugin/nerdtree-red) - A tree explorer plugin for vim.
  * [vim-airline](http://vimawesome.com/plugin/vim-airline) - lean & mean status/tabline for vim that's light as air
  * [vim-airline-themes](http://vimawesome.com/plugin/vim-airline-themes) - A collection of themes for vim-airline
  * [vim-bufkill](http://vimawesome.com/plugin/bufkill-vim) - Close buffers without closing splits, windows, or tabs
+ * [vim-easymotion](http://vimawesome.com/plugin/easymotion) - Vim motions on speed!
+ * [vim-flake8](https://vimawesome.com/plugin/vim-flake8) - Run python files through static syntax and file checker
  * [vim-fugitive](http://vimawesome.com/plugin/fugitive-vim) - fugitive.vim: a Git wrapper so awesome, it should be illegal
+ * [vim-jenkinsfile](https://vimawesome.com/plugin/vim-jenkinsfile) - Simple Vim plugin to recognise Jenkinsfile as a Groovy script
  * [vim-json](http://vimawesome.com/plugin/vim-json-speak-now) - Syntax highlighting for JSON in Vim
  * [vim-markdown](http://vimawesome.com/plugin/vim-markdown-enchanted) - Vim Markdown runtime files
  * [vim-nerdtree-tabs](http://vimawesome.com/plugin/vim-nerdtree-tabs) - NERDTree and tabs together in Vim, painlessly
+ * [vim-ps1](https://vimawesome.com/plugin/vim-ps1) - A Vim plugin for Windows PowerShell support
  * [vim-puppet](http://vimawesome.com/plugin/vim-puppet-enchanted) - Puppet niceties for your Vim setup
- * [vim-startify](http://vimawesome.com/plugin/vim-startify) - The fancy start screen for Vim.
+ * [vim-startify](http://vimawesome.com/plugin/vim-startify) - The fancy start screen for Vim
+ * [vim-tmux-navigator](https://vimawesome.com/plugin/vim-tmux-navigator) - Seamless navigation between tmux panes and vim splits
+ * [vim-virtualenv](https://vimawesome.com/plugin/virtualenv-vim) - Vim plugin for working with python virtualenvs
 
 ## Non-Default Addons
 
 These are other addons I find useful but don't need to be installed everywhere:
 
-* https://github.com/christoomey/vim-tmux-navigator
 * https://github.com/vim-syntastic/syntastic
 * https://github.com/Valloric/YouCompleteMe
-* https://github.com/nvie/vim-flake8
-* https://github.com/jmcantrell/vim-virtualenv
 
 ## Tmux Tweaks
 
@@ -130,6 +134,17 @@ is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
         bind-key -n C-l if-shell "$is_vim" "send-keys C-l"  "select-pane -R"
         bind-key -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
 #set-option -g default-terminal "screen-256color"
+```
+
+## Puppet File Format Fixes
+
+After install add the following lines to `./bundle/vim-puppet/ftplugin/puppet.vim`:
+
+```vim
+setl ts=2
+setl sts=2
+setl sw=2
+setl et
 ```
 
 ## Building Vim

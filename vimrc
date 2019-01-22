@@ -89,10 +89,12 @@
 	" Set up Tabs
 	set tabstop=4
 	set ts=4
+	set softtabstop=4
 	set autoindent
 	set smartindent
 	set shiftwidth=4
 	set scrolloff=10
+	set noexpandtab
 	" Automatically insert the comment leader on new line (o/O)
 	autocmd FileType * setlocal fo-=r fo-=o
 	" Misc filetype customizations
@@ -157,25 +159,32 @@
 		\ |	endif
 " }}}
 " Airline {{{
+	" Enable Airline Fonts
+	let g:airline_powerline_fonts = 1
 	" Enable Airline's Tab Bar
 	let g:airline#extensions#tabline#enabled = 1
 	let g:airline_theme='molokai'
-	" Enable Airline Fonts
-	let g:airline_powerline_fonts = 1
 " }}}
 " Syntastic {{{
 "        set statusline+=%#warningmsg#
 "        set statusline+=%{SyntasticStatuslineFlag()}
 "        set statusline+=%*
 "
+"        " Default to Python/Python2
 "        "let g:syntastic_python_python_exec = 'python3'
 "        let g:syntastic_always_populate_loc_list = 1
 "        let g:syntastic_auto_loc_list = 1
 "        let g:syntastic_check_on_open = 1
 "        let g:syntastic_check_on_wq = 0
+"        " Fix for some RightScale Self-Service Load Times
+"        "let g:syntastic_mode_map = { "mode": "active", "passive_filetypes": [ "ruby" ] }
 " }}}
 " Python Stuff {{{
 "        " Use the most relevant python3 interpreter (even works with virtualenv)
+"        " Neovim-specific
+"        let g:python_host_prog = '/home/ckabalan/.virtualenv/neovim27/bin/python'
+"        let g:python3_host_prog = '/home/ckabalan/.virtualenv/neovim36/bin/python'"
+"        " We don't really use YouCompleteMe anymore, but leaving here anyway...
 "        let g:ycm_server_python_interpreter = 'python3'
 "        let g:ycm_python_binary_path = 'python3'
 "        " Highlight Bad Whitespace
@@ -186,7 +195,7 @@
 "                \ set tabstop=4 |
 "                \ set softtabstop=4 |
 "                \ set shiftwidth=4 |
-"                \ set textwidth=79 |
+"                \ set textwidth=119 |
 "                \ set expandtab |
 "                \ set autoindent |
 "                \ set fileformat=unix
